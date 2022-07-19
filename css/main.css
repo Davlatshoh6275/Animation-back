@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614455014_52-p-zadnii-fon-temnii-58.jpg");
+}
+
+.conteiner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.conteiner .phone {
+  width: 250px;
+  height: 400px;
+  border: 10px solid rgb(49, 47, 47);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 7px 5px rgb(75, 73, 73);
+}
+
+.conteiner .switch {
+  width: 50px;
+  height: 305px;
+  border-radius: 40px;
+  position: relative;
+  transition: all .15s ease;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 1px;
+  background: rgba(20, 24, 28, 1);
+}
+
+.conteiner .switch::-webkit-scrollbar {
+  width: 1px;
+}
+
+
+.conteiner .switch .btn {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  margin: 7px;
+  background: rgba(0,8,16,1);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.06);
+
+}
+
+.conteiner .switch .space {
+  height: 245px;
+  scroll-snap-align: center;
+}
+
+.switch.active .btn i {
+  color: rgb(59, 232, 139);
+}
+
+.conteiner .switch .btn i {
+  font-size: 1.5em;
+  color: rgb(233, 89, 76);
+  transition: all   .25s ease; 
+}
